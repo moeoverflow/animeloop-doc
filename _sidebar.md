@@ -1,0 +1,12 @@
+- Getting started
+  - [Quick start](/README)
+  - [Demo](/demo)
+- Overview
+  - [Global](/global)
+- Get Data
+  - [Loop](/loop)
+  - [Episode](/episode)
+  - [Bangumi](/bangumi)
+  - [Tag](/tag)
+- Others
+  - [Old version API](/old-version)

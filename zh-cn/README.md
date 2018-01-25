@@ -1,12 +1,12 @@
-## Quick start
+### 简单使用
 
-#### If you want to get a random loop
+如果你想要随机获取一个 loop 的数据
 
 ```bash
 curl https://animeloop.org/api/v2/random/loop
 ```
 
-#### If you need a random background video
+如果你需要一个随机的背景视频
 
 ```html
 <video loop="loop" autoplay="autoplay" muted="muted" webkit-playsinline="" playsinline="" preload="">

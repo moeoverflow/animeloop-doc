@@ -1,0 +1,12 @@
+- 入门
+  - [快速开始](/zh-cn/README)
+  - [示例](zh-cn/demo)
+- 概述
+  - [全局设定](/zh-cn/global)
+- 获取数据
+  - [Loop](/zh-cn/loop)
+  - [Episode](/zh-cn/episode)
+  - [Bangumi](/zh-cn/bangumi)
+  - [Tag](zh-cn/tag)
+- 其他
+  - [旧版本 API](zh-cn/old-version)
