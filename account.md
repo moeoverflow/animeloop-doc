@@ -10,6 +10,8 @@ Request body
 | password | imjohnsmith777      |
 | email    | johnsmith@haruhi.tv |
 
+!> Password stored in the database was encrypted by [bcryptjs](https://github.com/dcodeIO/bcrypt.js), not the original password, feel free to use it.
+
 Example request 
 
 ```bash

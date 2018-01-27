@@ -10,6 +10,8 @@
 | password | imjohnsmith777      |
 | email    | johnsmith@haruhi.tv |
 
+!> 密码通过 [bcryptjs](https://github.com/dcodeIO/bcrypt.js) 加密存储于数据库，并非密码原文存储，请各位用户放心。
+
 示例请求
 
 ```bash
