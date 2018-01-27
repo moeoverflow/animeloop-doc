@@ -1,12 +1,15 @@
 - Getting started
-  - [Quick start](/README)
-  - [Demo](/demo)
+  - [Quick start](README)
+  - [Demo](demo)
 - Overview
-  - [Global](/global)
+  - [Global](global)
 - Get Data
-  - [Loop](/loop)
-  - [Episode](/episode)
-  - [Bangumi](/bangumi)
-  - [Tag](/tag)
+  - [Loop](loop)
+  - [Episode](episode)
+  - [Bangumi](bangumi)
+  - [Tag](tag)
+- Authentication
+  - [Account](account)
+  - [Token](token)
 - Others
-  - [Old version API](/old-version)
+  - [Old version API](old-version)
