@@ -70,15 +70,16 @@ curl https://animeloop.org/api/v2/loop?id=59adf78ac4c0bc657943222d
 
 可用的 query 键值：
 
-| KEY         | VALUE TYPE       | EXAMPLE                  | DESCRIPTION                              |
-| ----------- | ---------------- | ------------------------ | ---------------------------------------- |
-| seriesid    | MongoDB ObjectId | 592a63088e46ce684784a6b3 | loops 所在的 seriesid                       |
-| episodeid   | MongoDB ObjectId | 591b2b9268f9f00f82bf35ba | loops 所在的 episodeid                      |
-| duration    | Number (Second)  | 0,1 / 1.5,2.0            | loops 的时间长度                              |
-| source_from | String           | automator / upload       | loop 的来源                                 |
-| full        | Boolean          | true / false             | 是否返回完整的 loop 数据（包括 series 和 episode 数据）（默认为 false） |
-| page        | Number           | 11                       | 获取第 N 页的 loops 数据（默认为 1）                 |
-| limit       | Number           | 20                       | 每一页的数量（默认为 30，最高不超过 100）                 |
+| KEY          | VALUE TYPE       | EXAMPLE                  | DESCRIPTION                              |
+| ------------ | ---------------- | ------------------------ | ---------------------------------------- |
+| seriesid     | MongoDB ObjectId | 592a63088e46ce684784a6b3 | loops 所在的 seriesid                       |
+| episodeid    | MongoDB ObjectId | 591b2b9268f9f00f82bf35ba | loops 所在的 episodeid                      |
+| collectionid | Number           | 1080 / 1111              | loops 所在的 collectionid                   |
+| duration     | Number (Second)  | 0,1 / 1.5,2.0            | loops 的时间长度                              |
+| source_from  | String           | automator / upload       | loop 的来源                                 |
+| full         | Boolean          | true / false             | 是否返回完整的 loop 数据（包括 series 和 episode 数据）（默认为 false） |
+| page         | Number           | 11                       | 获取第 N 页的 loops 数据（默认为 1）                 |
+| limit        | Number           | 20                       | 每一页的数量（默认为 30，最高不超过 100）                 |
 
 !> 需要注意的是，如果这里需要 series 和 episode 做筛选条件的话，只需要提供其中一个，如果两个键值都提供而 episode 不在 series 里面，那么将返回空数据。
 

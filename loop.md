@@ -70,15 +70,16 @@ Example response
 
 Avaliable query keys
 
-| KEY         | VALUE TYPE       | EXAMPLE                  | DESCRIPTION                              |
-| ----------- | ---------------- | ------------------------ | ---------------------------------------- |
-| seriesid    | MongoDB ObjectId | 592a63088e46ce684784a6b3 | seriesid of loops                        |
-| episodeid   | MongoDB ObjectId | 591b2b9268f9f00f82bf35ba | episodeid of loops                       |
-| duration    | Number (Second)  | 0,1 / 1.5,2.0            | range of duration of loops               |
-| source_from | String           | automator / upload       | source of loops                          |
-| full        | Boolean          | true / false             | Whether to return the full loops (including series and episode) (default is false) |
-| page        | Number           | 11                       | loops on page N (default: first page)    |
-| limit       | Number           | 20                       | The number of bangumi per page(default 30, max 100) |
+| KEY          | VALUE TYPE       | EXAMPLE                  | DESCRIPTION                              |
+| ------------ | ---------------- | ------------------------ | ---------------------------------------- |
+| seriesid     | MongoDB ObjectId | 592a63088e46ce684784a6b3 | seriesid of loops                        |
+| episodeid    | MongoDB ObjectId | 591b2b9268f9f00f82bf35ba | episodeid of loops                       |
+| collectionid | Number           | 1080 / 1111              | collectionid of loops                    |
+| duration     | Number (Second)  | 0,1 / 1.5,2.0            | range of duration of loops               |
+| source_from  | String           | automator / upload       | source of loops                          |
+| full         | Boolean          | true / false             | Whether to return the full loops (including series and episode) (default is false) |
+| page         | Number           | 11                       | loops on page N (default: first page)    |
+| limit        | Number           | 20                       | The number of bangumi per page(default 30, max 100) |
 
 !> It should be 
 noted that if you need series and episode filter conditions here, you 

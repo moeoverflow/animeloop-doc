@@ -9,6 +9,8 @@
   - [Episode](zh-cn/episode)
   - [Bangumi](zh-cn/bangumi)
   - [Tag](zh-cn/tag)
+- 合集
+  - [Loop 合集](zh-cn/loop-collection)
 - 权限验证
   - [帐户](zh-cn/account)
   - [Token](zh-cn/token)

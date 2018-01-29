@@ -8,6 +8,8 @@
   - [Episode](episode)
   - [Bangumi](bangumi)
   - [Tag](tag)
+- Collection
+  - [Loop Collection](loop-collection)
 - Authentication
   - [Account](account)
   - [Token](token)
