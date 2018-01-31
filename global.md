@@ -4,9 +4,9 @@
 
 ## Global  query keys
 
-| KEY  | VALUE TYPE | EXAMPLE      | DESCRIPTION             |
-| ---- | ---------- | ------------ | ----------------------- |
-| cdn  | Boolean    | true / false | 是否返回 CDN 资源链接（默认为 true） |
+| KEY  | VALUE TYPE | EXAMPLE      | DESCRIPTION                              |
+| ---- | ---------- | ------------ | ---------------------------------------- |
+| cdn  | Boolean    | true / false | Whether to return the CDN resource (default is true) |
 
 ?> Currently, the cdn resource url is HTTP, the origin resource url is HTTPS
 
