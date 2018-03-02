@@ -152,6 +152,31 @@ Example Response
 }
 ```
 
+## Get count of bangumi
+
+**`GET /series/count?[query=value, ...]`**
+
+The available query keys are the same as above except for the `page` and` limit` fields.
+
+Example Request
+
+```bash
+curl https://animeloop.org/api/v2/series/count
+```
+
+Example Response
+
+```json
+{
+  "status": "success",
+  "code":200, 
+  "message":"success", 
+  "data": {
+    "count": 495
+  }
+}
+```
+
 ## Seach bangumi 
 
 **`GET /search/series?[value=[keyword1, ...]`**

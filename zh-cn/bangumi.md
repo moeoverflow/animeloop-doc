@@ -152,6 +152,31 @@ curl https://animeloop.org/api/v1/series?season=2015-1
 }
 ```
 
+## 获取番剧数量
+
+**`GET /series/count?[query=value, ...]`**
+
+可用的 query 键值除去 `page` 和 `limit` 字段其余同上。
+
+示例请求
+
+```bash
+curl https://animeloop.org/api/v2/series/count
+```
+
+返回结果
+
+```json
+{
+  "status": "success",
+  "code":200, 
+  "message":"success", 
+  "data": {
+    "count": 495
+  }
+}
+```
+
 ## 搜索番剧
 
 **`GET /search/series?[value=[keyword1, ...]`**

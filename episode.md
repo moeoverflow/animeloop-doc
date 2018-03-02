@@ -114,3 +114,29 @@ Example Response
 }
 ```
 
+## Get count of episodes
+
+**`GET /episode/count?[query=value, ...]`**
+
+The available query keys are the same as above except for the `page` and` limit` fields.
+
+Example Request
+
+```bash
+curl https://animeloop.org/api/v2/episode/count
+```
+
+Example Response
+
+```json
+{
+  "status": "success",
+  "code":200, 
+  "message":"success", 
+  "data": {
+    "count": 5116
+  }
+}
+```
+
+## 

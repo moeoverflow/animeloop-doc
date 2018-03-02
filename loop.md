@@ -178,6 +178,31 @@ Example response
 }
 ```
 
+## Get count of loops
+
+**`GET /loop/count?[query=value, ...]`**
+
+The available query keys are the same as above except for the `page` and` limit` fields.
+
+Example Request
+
+```bash
+curl https://animeloop.org/api/v2/loop/count?duration=3.0,4.0
+```
+
+Example Response
+
+```json
+{
+  "status": "success",
+  "code":200, 
+  "message":"success", 
+  "data": {
+    "count": 3690
+  }
+}
+```
+
 ## Get a group of random loops
 
 **`GET /rand/loop?[query=value, ...]`**

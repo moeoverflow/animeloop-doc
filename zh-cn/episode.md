@@ -114,3 +114,27 @@ curl https://animeloop.org/api/v2/episode?series=592a63088e46ce684784a6b3&full=t
 }
 ```
 
+## 获取 episodes 数量
+
+**`GET /episode/count?[query=value, ...]`**
+
+可用的 query 键值除去 `page` 和 `limit` 字段其余同上。
+
+示例请求
+
+```bash
+curl https://animeloop.org/api/v2/episode/count
+```
+
+返回结果
+
+```json
+{
+  "status": "success",
+  "code":200, 
+  "message":"success", 
+  "data": {
+    "count": 5116
+  }
+}
+```

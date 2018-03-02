@@ -177,6 +177,31 @@ https://animeloop.org/api/v1/loop?seriesid=592a63088e46ce684784a6b3&duration=1.5
 }
 ```
 
+## 获取 loops 数量
+
+**`GET /loop/count?[query=value, ...]`**
+
+可用的 query 键值除去 `page` 和 `limit` 字段其余同上。
+
+示例请求
+
+```bash
+curl https://animeloop.org/api/v2/loop/count?duration=3.0,4.0
+```
+
+返回结果
+
+```json
+{
+  "status": "success",
+  "code":200, 
+  "message":"success", 
+  "data": {
+    "count": 3690
+  }
+}
+```
+
 ## 随机获取一组 loops
 
 **`GET /rand/loop?[query=value, ...]`**
