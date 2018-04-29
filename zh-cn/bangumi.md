@@ -52,7 +52,7 @@ curl https://animeloop.org/api/v2/series?id=592a63088e46ce684784a6b3
 
 ```bash
 获取2015年1月番剧第一页的番剧（每页 3 个 series）
-curl https://animeloop.org/api/v1/series?season=2015-1
+curl https://animeloop.org/api/v2/series?season=2015-1
 ```
 
 返回结果

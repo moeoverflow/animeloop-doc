@@ -79,7 +79,7 @@ Avaliable query keys
 | source_from  | String           | automator / upload       | source of loops                          |
 | full         | Boolean          | true / false             | Whether to return the full loops (including series and episode) (default is false) |
 | page         | Number           | 11                       | loops on page N (default: first page)    |
-| limit        | Number           | 20                       | The number of bangumi per page(default 30, max 100) |
+| limit        | Number           | 20                       | The number of bangumi per page(default 30, max 1000) |
 
 !> It should be 
 noted that if you need series and episode filter conditions here, you 
@@ -90,7 +90,7 @@ Example request
 
 ```bash
 # Get loops on first page (3 loops per page) which seriesid is 592a63088e46ce684784a6b3 and range of duration is between 1.5s and 2.0s
-https://animeloop.org/api/v1/loop?seriesid=592a63088e46ce684784a6b3&duration=1.5,2.0&limit=3
+https://animeloop.org/api/v2/loop?seriesid=592a63088e46ce684784a6b3&duration=1.5,2.0&limit=3
 ```
 
 Example response
@@ -216,7 +216,7 @@ Avaliable query keys
 | duration    | Number (Second)  | 0,1 / 1.5,2.0            | range of duration of loops               |
 | source_from | String           | automator / upload       | source of loops                          |
 | full        | Boolean          | true / false             | Whether to return the full loops (including series and episode) (default is false) |
-| limit       | Number           | 20                       | The number of bangumi per page(default 30, max 100) |
+| limit       | Number           | 20                       | The number of bangumi per page(default 30, max 1000) |
 
 !> Note that, when using the limit field, if the limit is 1, the result returned is still an array.
 

@@ -51,7 +51,7 @@ Avaliable query keys
 | no       | String           | 01 / OVA / Movie         | episode no                               |
 | full     | Boolean          | true / false             | Whether to return complete episodes (including series) (default is false) |
 | page     | Number           | 11                       | loops on page N (default: first page)    |
-| limit    | Number           | 20                       | The number of bangumi per page(default 30, max 100) |
+| limit    | Number           | 20                       | The number of bangumi per page(default 30, max 1000) |
 
 Example Request
 

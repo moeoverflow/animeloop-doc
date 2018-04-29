@@ -79,7 +79,7 @@ curl https://animeloop.org/api/v2/loop?id=59adf78ac4c0bc657943222d
 | source_from  | String           | automator / upload       | loop 的来源                                 |
 | full         | Boolean          | true / false             | 是否返回完整的 loop 数据（包括 series 和 episode 数据）（默认为 false） |
 | page         | Number           | 11                       | 获取第 N 页的 loops 数据（默认为 1）                 |
-| limit        | Number           | 20                       | 每一页的数量（默认为 30，最高不超过 100）                 |
+| limit        | Number           | 20                       | 每一页的数量（默认为 30，最高不超过 1000）                 |
 
 !> 需要注意的是，如果这里需要 series 和 episode 做筛选条件的话，只需要提供其中一个，如果两个键值都提供而 episode 不在 series 里面，那么将返回空数据。
 
@@ -89,7 +89,7 @@ curl https://animeloop.org/api/v2/loop?id=59adf78ac4c0bc657943222d
 
 ```bash
 获取 seriesid 为 592a63088e46ce684784a6b3 且 duration 大于 1.5s 小于 2.0s 的第一页 loops（每页 3 个 loops）
-https://animeloop.org/api/v1/loop?seriesid=592a63088e46ce684784a6b3&duration=1.5,2.0&limit=3
+https://animeloop.org/api/v2/loop?seriesid=592a63088e46ce684784a6b3&duration=1.5,2.0&limit=3
 ```
 
 返回结果
@@ -215,7 +215,7 @@ curl https://animeloop.org/api/v2/loop/count?duration=3.0,4.0
 | duration    | Number (Second)  | 0,1 / 1.5,2.0            | loops 的时间长度                              |
 | source_from | String           | automator / upload       | loop 的来源                                 |
 | full        | Boolean          | true / false             | 是否返回完整的 loop 数据（包括 series 和 episode 数据）（默认为 false） |
-| limit       | Number           | 20                       | 随机获取 loops 的数量（默认为 30，最高不超过 100）         |
+| limit       | Number           | 20                       | 随机获取 loops 的数量（默认为 30，最高不超过 1000）         |
 
 !> 需要注意的是，使用 limit 字段的时候，如果 limit 为 1，返回的结果仍然是一个数组。
 

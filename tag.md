@@ -11,7 +11,7 @@ Avaliable query keys
 | source     | Boolean          | true / false                | source of tags                           |
 | confidence | Number           | 0.85,0.9 / 0.95,0.99        | range of confidence of tags              |
 | page       | Number           | 11                          | loops on page N                          |
-| limit      | Number           | 20                          | The number of bangumi per page(default 30, max 100) |
+| limit      | Number           | 20                          | The number of bangumi per page(default 30, max 1000) |
 
 Example request
 

@@ -51,7 +51,7 @@ curl https://animeloop.org/api/v2/episode?id=591b2b9268f9f00f82bf35ba
 | no       | String           | 01 / OVA / Movie         | episode 序号                     |
 | full     | Boolean          | true / false             | 是否返回完整的 episodes 数据（包括 series） |
 | page     | Number           | 11                       | 获取第 N 页的 loops 数据              |
-| limit    | Number           | 20                       | 每一页的数据量（默认为 30）                |
+| limit    | Number           | 20                       | 每一页的数据量（默认为 30，最高不超过 1000）                |
 
 示例请求
 

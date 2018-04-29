@@ -11,7 +11,7 @@
 | source     | Boolean          | true / false                | tag 的源出处          |
 | confidence | Number           | 0.85,0.9 / 0.95,0.99        | tag 的可信度          |
 | page       | Number           | 11                          | 获取第 N 页的 loops 数据 |
-| limit      | Number           | 20                          | 每一页的数据量（默认为 30）   |
+| limit      | Number           | 20                          | 每一页的数据量（默认为 30，最高不超过 1000）   |
 
 示例请求
 
