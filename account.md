@@ -9,7 +9,7 @@ Request body
 | username             | kyon777                                                      |
 | password             | imjohnsmith777                                               |
 | email                | johnsmith@haruhi.tv                                          |
-| g-recaptcha-response | 03AJpayVF6YpF1BGU-kZqEwN6G2k7cOv16_Q-SvK8zOUHrtkqdlVrIf9BJhEnbecV7PwAgCSF1JKUC3Gr5AQILxBuSrKKZrvkHQlm2pZfnTFWuyq0rYID2oUhlsKxVA4FY03GEJV-BCaciZphPDZpvid9t9ompoh8HS0_iKP9EgD9ju7ksqSiy9XcVkHfOy7BQJ2qEeaR2qHxrG2wFLC6w0D4bG8dySX9VgKeMW_pvXnni9ZMLXIVcTz4WpDtaELvRaIc02wWjgmvZZ8DXJ0on2B7T1IACOFYu5dvDVRJz3DsRvs8nYIbz1MwRfzQGVycQz5p5Z8b1lwhkVotYlaetMS3A79ECfJPXOJs4_Hrd5q9TofiYOIbqFPk |
+| g-recaptcha-response | 03AJpayVF6YpF1BGU-kZqEwN6G2k7cOv16_Q-SvK8zOUHrtkqdlVrIf9BJh... |
 
 !> Password stored in the database was encrypted by [bcryptjs](https://github.com/dcodeIO/bcrypt.js), not the original password, feel free to use it.
 
@@ -51,7 +51,7 @@ Example response
 
 Request body
 
-| KEY      | eXAMPLE        |
+| KEY      | EXAMPLE        |
 | -------- | -------------- |
 | username | kyon777        |
 | password | imjohnsmith777 |
@@ -125,7 +125,7 @@ Request body
 | -------------------- | ------------------------------------------------------------ |
 | username             | kyon777                                                      |
 | password             | imjohnsmith777                                               |
-| g-recaptcha-response | 03AJpayVF6YpF1BGU-kZqEwN6G2k7cOv16_Q-SvK8zOUHrtkqdlVrIf9BJhEnbecV7PwAgCSF1JKUC3Gr5AQILxBuSrKKZrvkHQlm2pZfnTFWuyq0rYID2oUhlsKxVA4FY03GEJV-BCaciZphPDZpvid9t9ompoh8HS0_iKP9EgD9ju7ksqSiy9XcVkHfOy7BQJ2qEeaR2qHxrG2wFLC6w0D4bG8dySX9VgKeMW_pvXnni9ZMLXIVcTz4WpDtaELvRaIc02wWjgmvZZ8DXJ0on2B7T1IACOFYu5dvDVRJz3DsRvs8nYIbz1MwRfzQGVycQz5p5Z8b1lwhkVotYlaetMS3A79ECfJPXOJs4_Hrd5q9TofiYOIbqFPk |
+| g-recaptcha-response | 03AJpayVF6YpF1BGU-kZqEwN6G2k7cOv16_Q-SvK8zOUHrtkqdlVrIf9BJh... |
 
 !> The response of this request contains a session cookie.
 
