@@ -64,6 +64,7 @@ Possible response
 | ------- | --------------------------------------- | ------ |
 | 1420002 | send verification email successfully.   |        |
 | 1420003 | this account has already been verified. |        |
+| 1450301 | mail smtp server error.                 |        |
 | 1940104 | username is empty.                      | common |
 | 1940105 | password is empty.                      | common |
 | 1940106 | incorrect username or password.         | common |
