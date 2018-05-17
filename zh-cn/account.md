@@ -64,8 +64,9 @@ curl -d "username=kyon777&password=imjohnsmith777&email=johnsmith@haruhi.tv&g-re
 | ------- | --------------------------------------- | ------ |
 | 1420002 | send verification email successfully.   |        |
 | 1420003 | this account has already been verified. |        |
-| 1440003 | empty username or password.             |        |
-| 1440004 | incorrect username or password.         |        |
+| 1940104 | username is empty.                      | common |
+| 1940105 | password is empty.                      | common |
+| 1940106 | incorrect username or password.         | common |
 | 1950301 | internal server error, database error.  | common |
 
 示例请求
@@ -136,9 +137,10 @@ curl https://animeloop.org/api/v2/auth/verify?code=eyJ0eXAiOiJKV1QiLCJhbGciOiJIU
 | code    | message                                | note   |
 | ------- | -------------------------------------- | ------ |
 | 1220001 | login successfully.                    |        |
-| 1240101 | incorrect username or password.        |        |
-| 1240102 | this account has not yet verified.     |        |
 | 1940101 | Google reCAPTCHA verification failed.  | common |
+| 1940104 | username is empty.                     | common |
+| 1940105 | password is empty.                     | common |
+| 1940106 | incorrect username or password.        | common |
 | 1950301 | internal server error, database error. | common |
 
 示例请求
@@ -178,7 +180,6 @@ curl -d "username=kyon777&password=imjohnsmith777&g-recaptcha-response=03AJpayVF
 | ------- | -------------------------------------- | ------ |
 | 1220002 | logout successfully.                   |        |
 | 1940102 | cookie session validation failed.      | common |
-| 1940103 | cookie session doesn't exist.          | common |
 | 1950301 | internal server error, database error. | common |
 
 示例请求
