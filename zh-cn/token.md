@@ -1,6 +1,8 @@
 ## Token 申请
 
-**`POST /auth/token`** 获取 token
+?> 你应该通过 [Dashboard API](https://animeloop.org/dashboard/profile/api) 来获取 token。
+
+**`GET /auth/token`** 获取 token
 
 **`POST /auth/token/new`** 申请新的 token
 
@@ -16,15 +18,14 @@
 
 可能的响应结果
 
-| code    | message                                    | note   |
-| ------- | ------------------------------------------ | ------ |
-| 1320001 | request token successfully.                |        |
-| 1320002 | request a new token successfully.          |        |
-| 1320003 | revoke the token successfully.             |        |
-| 1340401 | request token failed. token doesn't exist. |        |
-| 1940102 | cookie session validation failed.          | common |
-| 1940103 | cookie session doesn't exist.              | common |
-| 1950301 | internal server error, database error.     | common |
+| code    | message                                | note   |
+| ------- | -------------------------------------- | ------ |
+| 1320001 | get token success.                     |        |
+| 1320002 | create a new token success.            |        |
+| 1320003 | revoke the token success.              |        |
+| 1940102 | cookie session validation failed.      | common |
+| 1940103 | cookie session doesn't exist.          | common |
+| 1950301 | internal server error, database error. | common |
 
 示例请求
 
@@ -39,10 +40,12 @@ curl --cookie "animeloop.auth.sid=s%3A4VtJUXAabKIew3Wib8scACX1lDZK6Z3d.7Hqy%2F8N
 {
   "status":"success",
   "code":1320001,
-  "message":"request the token successfully.",
-  "data": {
+  "message":"get token success.",
+  "data": [{
+    "_id": 1,
+    "name": "animeloop_dev",
     "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNoaW5jdXJyeTIifQ.VMZHgDvyqeUHqN6Wg92CvlphdiwNynuOY5ELdFQTY3w"
-  }
+  }]
 }
 ```
 
@@ -61,7 +64,7 @@ curl --cookie "animeloop.auth.sid=s%3A4VtJUXAabKIew3Wib8scACX1lDZK6Z3d.7Hqy%2F8N
 {
   "status": "success",
   "code": 1320002,
-  "message": "request a new token successfully.",
+  "message": "create a new token success.",
   "data": {
     "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNoaW5jdXJyeTIifQ.VMZHxDvyqeUHaN6Wg92CvlphvicNynuOY5ELdFQTY3w"
   }
@@ -83,7 +86,7 @@ curl --cookie "animeloop.auth.sid=s%3A4VtJUXAabKIew3Wib8scACX1lDZK6Z3d.7Hqy%2F8N
 {
   "status":"success",
   "code":1320003,
-  "message":"revoke the token successfully.",
+  "message":"revoke the token success.",
   "data": {}
 }
 ```

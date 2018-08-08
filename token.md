@@ -1,6 +1,8 @@
 ## Token request
 
-**`POST /auth/token`** Get token
+?> You should get tokens from [Dashboard API](https://animeloop.org/dashboard/profile/api).
+
+**`GET /auth/token`** Get tokens
 
 **`POST /auth/token/new`** Request a new token
 
@@ -16,15 +18,14 @@ Request cookies
 
 Possible response
 
-| code    | message                                    | note   |
-| ------- | ------------------------------------------ | ------ |
-| 1320001 | request token successfully.                |        |
-| 1320002 | request a new token successfully.          |        |
-| 1320003 | revoke the token successfully.             |        |
-| 1340401 | request token failed. token doesn't exist. |        |
-| 1940102 | cookie session validation failed.          | common |
-| 1940103 | cookie session doesn't exist.              | common |
-| 1950301 | internal server error, database error.     | common |
+| code    | message                                | note   |
+| ------- | -------------------------------------- | ------ |
+| 1320001 | get token success.                     |        |
+| 1320002 | create a new token success.            |        |
+| 1320003 | revoke the token success.              |        |
+| 1940102 | cookie session validation failed.      | common |
+| 1940103 | cookie session doesn't exist.          | common |
+| 1950301 | internal server error, database error. | common |
 
 Example request
 
@@ -39,10 +40,12 @@ Example response
 {
   "status":"success",
   "code":1320001,
-  "message":"request the token successfully.",
-  "data": {
+  "message":"get token success.",
+  "data": [{
+    "_id": 1,
+    "name": "animeloop_dev",
     "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNoaW5jdXJyeTIifQ.VMZHgDvyqeUHqN6Wg92CvlphdiwNynuOY5ELdFQTY3w"
-  }
+  }]
 }
 ```
 
@@ -61,9 +64,11 @@ Example response
 {
   "status": "success",
   "code": 1320002,
-  "message": "request a new token successfully.",
+  "message": "create a new token success.",
   "data": {
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNoaW5jdXJyeTIifQ.VMZHxDvyqeUHaN6Wg92CvlphvicNynuOY5ELdFQTY3w"
+    "_id": 1,
+    "name": "animeloop_dev",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InNoaW5jdXJyeTIifQ.VMZHgDvyqeUHqN6Wg92CvlphdiwNynuOY5ELdFQTY3w"
   }
 }
 ```
@@ -83,7 +88,7 @@ Example response
 {
   "status":"success",
   "code":1320003,
-  "message":"revoke the token successfully.",
+  "message":"revoke the token success.",
   "data": {}
 }
 ```
