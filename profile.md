@@ -15,8 +15,8 @@ Possible response
 | code    | message                                | note   |
 | ------- | -------------------------------------- | ------ |
 | 1520001 | fetch userinfo success.                |        |
-| 1940102 | cookie session validation failed.      | common |
-| 1940103 | cookie session doesn't exist.          | common |
+| 1940102 | cookie session doesn't exist.          | common |
+| 1940103 | cookie session validation failed.      | common |
 | 1950301 | internal server error, database error. | common |
 
 Example request
@@ -53,8 +53,8 @@ Possible response
 | code    | message                                | note   |
 | ------- | -------------------------------------- | ------ |
 | 1520002 | update userinfo success                |        |
-| 1940102 | cookie session validation failed.      | common |
-| 1940103 | cookie session doesn't exist.          | common |
+| 1940102 | cookie session doesn't exist.          | common |
+| 1940103 | cookie session validation failed.      | common |
 | 1950301 | internal server error, database error. | common |
 
 Example request
@@ -97,8 +97,8 @@ Possible response
 | code    | message                                | note   |
 | ------- | -------------------------------------- | ------ |
 | 1520003 | upload new avatar success.             |        |
-| 1940102 | cookie session validation failed.      | common |
-| 1940103 | cookie session doesn't exist.          | common |
+| 1940102 | cookie session doesn't exist.          | common |
+| 1940103 | cookie session validation failed.      | common |
 | 1950301 | internal server error, database error. | common |
 
 Example request 

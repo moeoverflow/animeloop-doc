@@ -178,7 +178,8 @@ Possible response
 | code    | message                                | note   |
 | ------- | -------------------------------------- | ------ |
 | 1220002 | logout successfully.                   |        |
-| 1940102 | cookie session validation failed.      | common |
+| 1940102 | cookie session doesn't exist.          | common |
+| 1940103 | cookie session validation failed.      | common |
 | 1950301 | internal server error, database error. | common |
 
 Example request 
